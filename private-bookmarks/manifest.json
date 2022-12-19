@@ -1,0 +1,54 @@
+
+  "manifest_version": 2,
+  "name": "Web page annotator",
+  "description": "Displays a sidebar that lets you take notes on web pages.",
+  "version": "1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "54.0a1"
+    }
+  },
+
+  "sidebar_action": {
+    "default_icon": "icons/star.png",
+    "default_title" : "Annotator",
+    "default_panel": "sidebar/panel.html"
+  },
+
+  "permissions": ["storage", "tabs"],
+
+  "commands": {
+    "_execute_sidebar_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      }
+    }
+  }
+}
+
+{
+  "manifest_version": 2,
+  "name": "Bookmark it!",
+  "version": "1.1",
+  "description": "A simple bookmark button",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/bookmark-it",
+  "icons": {
+    "48": "icons/bookmark-it.png",
+    "96": "icons/bookmark-it@2x.png"
+  },
+
+  "permissions": [
+    "bookmarks",
+    "tabs"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/star-empty-38.png",
+    "default_title": "Bookmark it!"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
